@@ -1,0 +1,6 @@
+- hosts: all
+  sudo: True
+  user: vagrant
+  tasks:
+    - name: "Instala o nginx"
+      apt: name=nginx state=latest update_cache=yes install_recommends=yes
